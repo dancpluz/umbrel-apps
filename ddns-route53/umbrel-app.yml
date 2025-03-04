@@ -3,7 +3,7 @@ id: ddns-route53
 name: DDNS Route 53
 tagline: Dynamic DNS for Amazon Route 53
 icon: https://i.imgur.com/Dc2zR7v.png
-category: Utilities
+category: networking
 version: "1.0.0"
 port: 3002 # Placeholder (not actually used)
 description: Updates DNS records in Amazon Route 53 with the current IP address.

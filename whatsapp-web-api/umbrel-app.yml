@@ -3,7 +3,7 @@ id: whatsapp-web-api
 name: WhatsApp Web API
 tagline: Unofficial WhatsApp Web API for automation
 icon: https://i.imgur.com/Dc2zR7v.png  # Add actual icon URL
-category: utilities
+category: networking
 version: "1.0.0"
 port: 3000
 description: >-

@@ -1,15 +1,15 @@
-version: "3.7"
-
+version: '3.7'
 services:
   app_proxy:
     environment:
       APP_HOST: dancpluz-whatsapp-web-api_web_1
       APP_PORT: 3006
-      PROXY_AUTH_ADD: "false"  # Disable auth for API endpoints
-
-  api:
-    image: chrishubert/whatsapp-web-api@sha256:e929c16a970f60350b4974d68a08c5a8cea59124ff97741de2001628b9cc1392  # Add actual SHA256 digest
-    restart: on-failure  # Umbrel preferred policy
+      PROXY_AUTH_ADD: 'false'
+    container_name: dancpluz-whatsapp-web-api_app_proxy_1
+  web:
+    image: >-
+      chrishubert/whatsapp-web-api@sha256:e929c16a970f60350b4974d68a08c5a8cea59124ff97741de2001628b9cc1392
+    restart: on-failure
     stop_grace_period: 1m
     environment:
       - PORT=3006
@@ -17,7 +17,17 @@ services:
       - BASE_WEBHOOK_URL=${BASE_WEBHOOK_URL}
       - MAX_ATTACHMENT_SIZE=5000000
       - SET_MESSAGES_AS_SEEN=TRUE
-      - DISABLED_CALLBACKS=auth_failure|authenticated|call|change_state|disconnected|group_join|group_leave|group_update|loading_screen|media_uploaded|message_ack|message_create|message_reaction|message_revoke_everyone|qr|ready|contact_changed
+      - >-
+        DISABLED_CALLBACKS=auth_failure|authenticated|call|change_state|disconnected|group_join|group_leave|group_update
       - ENABLE_SWAGGER_ENDPOINT=TRUE
+      - NODE_ENV=production
+      - MAX_REQUEST_RETRIES=3
+      - REQUEST_TIMEOUT_MS=5000
     volumes:
       - ${APP_DATA_DIR}/sessions:/usr/src/app/sessions
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3006/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    container_name: dancpluz-whatsapp-web-api_web_1

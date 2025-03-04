@@ -7,7 +7,7 @@ category: networking
 version: "1.0.0"
 port: 3006
 description: >-
-  A self-hosted WhatsApp Web API that enables programmatic messaging through REST endpoints. 
+  A self-hosted WhatsApp Web API that enables programmatic messaging through REST endpoints.
   Key features:
 
   📱 WhatsApp Automation: Send messages, media, and manage contacts through API
@@ -29,6 +29,6 @@ repo: https://github.com/chrishubert/whatsapp-web-api
 support: https://github.com/chrishubert/whatsapp-web-api/issues
 gallery: []
 dependencies: []
-path: ""
+path: "/api-docs"
 defaultUsername: "none"
 defaultPassword: "none"

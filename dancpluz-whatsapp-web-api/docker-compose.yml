@@ -9,7 +9,6 @@ services:
 
   web:
     image: chrishubert/whatsapp-web-api@sha256:e929c16a970f60350b4974d68a08c5a8cea59124ff97741de2001628b9cc1392  # Add actual SHA256 digest
-    user: 1000:1000  # Required non-root user
     restart: on-failure  # Umbrel preferred policy
     stop_grace_period: 1m
     environment:

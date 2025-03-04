@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: ddns-route53_web_1  # Format: <app-id>_<service-name>_1
-      #APP_PORT: 3002  # Matches placeholder in umbrel-app.yml
+      APP_PORT: 3002  # Matches placeholder in umbrel-app.yml
       PROXY_AUTH_ADD: "false"  # Disable auth (no web UI needed)
 
   web:

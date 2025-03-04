@@ -1,0 +1,34 @@
+manifestVersion: 1
+id: whatsapp-web-api
+name: WhatsApp Web API
+tagline: Unofficial WhatsApp Web API for automation
+icon: https://i.imgur.com/Dc2zR7v.png  # Add actual icon URL
+category: utilities
+version: "1.0.0"
+port: 3000
+description: >-
+  A self-hosted WhatsApp Web API that enables programmatic messaging through REST endpoints. 
+  Key features:
+
+  📱 WhatsApp Automation: Send messages, media, and manage contacts through API
+  🔒 Session Persistence: Maintains active sessions across restarts
+  📊 Swagger Documentation: Built-in API documentation at /api-docs
+  ⚙️ Webhook Support: Configure callbacks for message events
+  📎 File Attachments: Support for sending files up to 5MB
+
+  Security Note:
+  - Requires valid WhatsApp QR code scan for initial setup
+  - API key protection mandatory for production use
+  - Webhooks should use HTTPS endpoints
+
+developer: Chris Hubert (Community Maintained)
+website: https://github.com/chrishubert/whatsapp-web-api
+submitter: dancpluz
+submission: https://github.com/dancpluz/umbrel-apps
+repo: https://github.com/chrishubert/whatsapp-web-api
+support: https://github.com/chrishubert/whatsapp-web-api/issues
+gallery: []
+dependencies: []
+path: ""
+defaultUsername: "none"
+defaultPassword: "none"

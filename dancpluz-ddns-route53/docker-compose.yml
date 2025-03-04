@@ -3,11 +3,11 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: dancpluz-ddns-route53_web_1  # Format: <app-id>_<service-name>_1
+      APP_HOST: dancpluz-ddns-route53_server_1  # Format: <app-id>_<service-name>_1
       APP_PORT: 3002  # Matches placeholder in umbrel-app.yml
       PROXY_AUTH_ADD: "false"  # Disable auth (no web UI needed)
 
-  api:
+  server:
     image: crazymax/ddns-route53:latest@sha256:crazymax/ddns-route53@sha256:d10e583abf0f5665217d557d8cafb9806e6fb079b7d255b516fe1f5dbf90a1b3  # Add actual SHA256 digest
     restart: on-failure  # Umbrel prefers this over unless-stopped
     stop_grace_period: 1m  # Standard Umbrel grace period

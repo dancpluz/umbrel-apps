@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"  # Disable auth (no web UI needed)
 
   web:
-    image: crazymax/ddns-route53:latest@sha256:XXXX  # Add actual SHA256 digest
+    image: crazymax/ddns-route53:latest@sha256:crazymax/ddns-route53@sha256:d10e583abf0f5665217d557d8cafb9806e6fb079b7d255b516fe1f5dbf90a1b3  # Add actual SHA256 digest
     user: 1000:1000  # Run as non-root (critical for Umbrel)
     restart: on-failure  # Umbrel prefers this over unless-stopped
     stop_grace_period: 1m  # Standard Umbrel grace period

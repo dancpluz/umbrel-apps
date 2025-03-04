@@ -13,6 +13,7 @@ services:
     restart: on-failure  # Umbrel preferred policy
     stop_grace_period: 1m
     environment:
+      - PORT=3006
       - API_KEY=${API_KEY}
       - BASE_WEBHOOK_URL=${BASE_WEBHOOK_URL}
       - MAX_ATTACHMENT_SIZE=5000000

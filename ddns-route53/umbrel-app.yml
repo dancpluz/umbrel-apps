@@ -1,0 +1,17 @@
+manifestVersion: 1
+id: ddns-route53
+category: utilities
+name: DDNS Route 53
+version: "1.0.0"
+tagline: Dynamic DNS for Amazon Route 53
+description: Updates DNS records in Amazon Route 53 with the current IP address.
+developer: AWS Community
+website: https://github.com/crazy-max/ddns-route53
+dependencies: []
+repo: https://github.com/crazy-max/ddns-route53
+support: https://github.com/crazy-max/ddns-route53/issues
+port: 3002 # Placeholder (not actually used)
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

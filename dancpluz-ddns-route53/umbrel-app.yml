@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: ddns-route53
+id: dancpluz-ddns-route53
 name: DDNS Route 53
 tagline: Dynamic DNS for Amazon Route 53
 icon: https://i.imgur.com/Dc2zR7v.png

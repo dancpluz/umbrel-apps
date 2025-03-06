@@ -1,0 +1,33 @@
+manifestVersion: 1.1
+id: appflowy-cloud
+name: AppFlowy Cloud
+category: productivity
+icon: https://images.sftcdn.net/images/t_app-icon-s/p/0eceb45a-079e-4759-b186-a1ab5b91f592/3308836730/appflowy-logo.png
+version: "1.0.0"
+port: 3000
+tagline: Open-source Notion alternative with AI integration
+description: >-
+  AppFlowy Cloud is a privacy-focused collaborative workspace featuring:
+
+  - Real-time document editing
+  - AI-powered content generation
+  - End-to-end encryption
+  - Cross-platform sync
+  - Customizable templates
+  - Third-party integrations
+  - Self-hostable infrastructure
+
+  Enterprise-grade features with open-source transparency. Manage documents,
+  tasks, and databases in a secure environment.
+
+developer: AppFlowy Team
+website: https://appflowy.io
+submitter: dancpluz
+submission: https://github.com/dancpluz/umbrel-apps
+repo: https://github.com/AppFlowy-IO/appflowy-cloud
+support: https://github.com/AppFlowy-IO/appflowy-cloud/issues
+gallery: []
+dependencies: []
+path: "/"
+defaultUsername: "admin"
+defaultPassword: "appflowy123"

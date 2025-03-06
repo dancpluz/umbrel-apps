@@ -5,7 +5,6 @@ services:
       APP_HOST: dancpluz-whatsapp-web-api_web_1
       APP_PORT: 3006
       PROXY_AUTH_ADD: 'false'
-    container_name: dancpluz-whatsapp-web-api_app_proxy_1
   web:
     image: >-
       chrishubert/whatsapp-web-api@sha256:e929c16a970f60350b4974d68a08c5a8cea59124ff97741de2001628b9cc1392
@@ -30,4 +29,3 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
-    container_name: dancpluz-whatsapp-web-api_web_1

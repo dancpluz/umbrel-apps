@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: appflowy_nginx_1
+      APP_HOST: dancpluz-appflowy-cloud_1
       APP_PORT: 1006
       PROXY_AUTH_ADD: "false"
       PROXY_REDIRECT: |
@@ -28,7 +28,7 @@ services:
           proxy_set_header Upgrade $http_upgrade;
           proxy_set_header Connection "Upgrade";
         }
-
+        
   nginx:
     image: nginx:alpine
     restart: on-failure
